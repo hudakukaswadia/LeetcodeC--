@@ -1,5 +1,8 @@
 // Iterative PostOrder Traversal using 1 stack
 
+// Time complexity: O(2N)
+// Space complexity: O(N)
+
 class Solution
 {
 public:
