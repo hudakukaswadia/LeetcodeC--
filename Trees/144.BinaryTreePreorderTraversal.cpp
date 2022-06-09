@@ -30,7 +30,6 @@ public:
 };
 
 // Recursive
-
 class Solution {
 public:
     void preOrder(TreeNode* root, vector<int> &res) {
