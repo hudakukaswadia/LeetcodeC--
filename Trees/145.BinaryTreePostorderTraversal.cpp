@@ -1,3 +1,29 @@
+// Recursive 
+
+// Time complexity: O(n)
+// Space complexity: O(n)
+
+class Solution {
+public: 
+    void postOrder(TreeNode* root, vector<int> &res) {
+        if (root == NULL) {
+            return;
+        }
+        
+        postOrder(root -> left, res);
+        postOrder(root -> right, res);
+        res.push_back(root -> val);
+    }
+    
+    vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> res;
+        postOrder(root, res);
+        return res;
+    }
+};
+
+
+
 // Iterative PostOrder Traversal using 1 stack
 
 // Time complexity: O(2N)
