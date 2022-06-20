@@ -1,5 +1,5 @@
 // Time complexity: O(n)
-// Space complexity
+// Space complexity: (n)
 
 class Solution {
 public:
